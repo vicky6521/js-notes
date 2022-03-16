@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS筆記</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="tab">
+        <button class="tablinks active p-1">浮點數相加</button>
+    </div>
+    <article class="d-block p-2 content">
+        <h2 class="py-2">浮點數相加</h2>
+        <div class="row">
+            <select name="num1" id="num1">
+                <option value="0.1" selected>0.1</option>
+                <option value="0.2">0.2</option>
+                <option value="0.3">0.3</option>
+                <option value="0.4">0.4</option>
+                <option value="0.5">0.5</option>
+                <option value="0.6">0.6</option>
+                <option value="0.7">0.7</option>
+                <option value="0.8">0.8</option>
+                <option value="0.9">0.9</option>
+            </select> +
+            <select name="num2" id="num2">
+                <option value="0.1">0.1</option>
+                <option value="0.2" selected>0.2</option>
+                <option value="0.3">0.3</option>
+                <option value="0.4">0.4</option>
+                <option value="0.5">0.5</option>
+                <option value="0.6">0.6</option>
+                <option value="0.7">0.7</option>
+                <option value="0.8">0.8</option>
+                <option value="0.9">0.9</option>
+            </select> =
+            <span class="sum"></span>
+        </div>
+        <div>
+            <h3 class="py-2">為什麼浮點數相加會有誤差?</h3>
+            <div class="d-flex py-1">
+                <span class="pr-1">可參考此篇文章 >></span>
+                <a href="https://medium.com/starbugs/see-why-floating-point-error-can-not-be-avoided-from-ieee-754-809720b32175" target="_blank">
+                    <h3>從 IEEE 754 標準來看為什麼浮點誤差是無法避免的</h3>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
